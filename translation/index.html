@@ -1,0 +1,112 @@
+﻿<!DOCType html>
+<html>
+<head>
+<!-- Diego Algara © 2005-2011 -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Marabotto - Read Entender Traduire</title>
+<meta name="description" content="Translation, Traduction, Übersetzung, Tradução, Traduzione, Traducció" />
+<meta name="keywords" content="Translation, Traduction, Übersetzung, Tradução, Traduzione, Traducció" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<style type="text/css">
+*{margin:0;padding:0}
+html{font:normal 15px arial,sans-serif;color:#333;background:#FFFFFF}
+input,textarea{outline:none;border:1px solid #ccc;background:#FFF}
+a:focus{outline:none}
+a,a:visited,a:active{color:#666;text-decoration:none}
+a:hover{text-decoration:underline}
+.center{text-align:center}
+.menu{margin:12px auto}
+.menu td{width:33%;font-weight:bold}
+.content{width:800px;text-align:left;margin:24px auto}
+.content td:first-child{width:80px}
+</style>
+<script type="text/javascript">
+$(function () {
+	$('.content').hide();
+	$('#content').show();
+});
+$(document).ready(function() {
+	$('a[href^=#]').click(function() {
+		var objetivo = $(this).attr('href');
+		$('#content').toggle('slow',function() {
+			$('#content').html($(objetivo).html());
+		});
+		$('#content').toggle('slow');
+	});
+});
+</script>
+</head>
+<body>
+<div class="center">
+<a href="../"><img src="../marabotto.png" /></a>
+<br/>
+<q>The art of bridging cultures!</q>
+<br/>
+<table class="menu">
+<tr>
+<td><a href="#servicios"><img src="../imgs/papel_64.png" title="Services" /></a></td>
+<td><a href="#especializaciones"><img src="../imgs/lentes_64.png" title="Specializations" /></a></td>
+<td><a href="#nosotros"><img src="../imgs/personas_64.png" title="Nosotros" /></a></td>
+</tr>
+<tr>
+<td><a href="#servicios">[Services]</a></td>
+<td><a href="#especializaciones">[Specializations]</a></td>
+<td><a href="#nosotros">[Nosotros]</a></td>
+</tr>
+</table>
+<table class="content" id="content">
+<tr>
+<td class="center">
+At Marabotto Translations we understand the needs of our clients.<br/>
+That's why we work hard to offer them comprehensive language services that meet and exceed their expectations.<br/>
+</td>
+</tr>
+</table>
+Office: (52) (55) 56 81 1767.  Mobile: 044  55 14 42 09 82 / <a href="mailto:a.sarmiento@marabottoret.com">a.sarmiento@marabottoret.com</a><br/>
+www.marabottoret.com  / Av. Desierto de los Leones  No. 4375. Col. Tetelpan, México D.F.<br/>
+</div>
+
+<table class="content" id="servicios">
+<tr>
+<td><img src="../imgs/pluma_64.png" title="Traducciones escritas" /></td>
+<td><b>Written Translations</b> - English, Spanish, French, German, Portuguese, Italian and Catalan, among others.</td>
+</tr>
+<tr>
+<td><img src="../imgs/reloj-arena_64.png" title="Traducciones urgentes" /></td>
+<td><b>Express Projects</b> - Fast turnaround for urgent translations all year round.<td>
+</tr>
+<tr>
+<td><img src="../imgs/sello_64.png" title="Traducciones certificadas" /></td>
+<td><b>Certified Translations</b> - Translations certified by expert/sworn translators.</td>
+</tr>
+<tr>
+<td><img src="../imgs/mic-headset_64.png" title="Traducciones certificadas" /></td>
+<td><b>Simultaneous and Consecutive Interpretation</b> - Interpreters and equipment rentals.</td>
+</tr>
+</table>
+
+<table class="content" id="especializaciones">
+<tr>
+<td><img src="../imgs/libros_64.png" title="Temas principales " /></td>
+<td><b>Areas of Expertise</b> - We have more than 15 years experience translating legal, financial, literary, scientific and marketing texts.</td>
+</tr>
+<tr>
+<td><img src="../imgs/cara_64.png" title="Equipo de trabajo" /></td>
+<td><b>Our Team</b> - All our translators are native speakers. Rather than just "doing translations," WE ARE professional translators.</td>
+</tr>
+<tr>
+<td><img src="../imgs/herramientas_64.png" title="Herramientas profesionales" /></td>
+<td><b>Professional Tools</b> - Use of CAT tools (Computer Assisted Translation) such as Trados and Wordfast, employing personal databases that facilitate standardization of terminology between translators. These tools allow us to perform our work more efficiently and to achieve a higher level of quality.</td>
+</tr>
+</table>
+
+
+<table class="content" id="nosotros">
+<tr>
+<td><img src="../imgs/manos_64.png" title="Responsabilité sociale" /></td>
+<td><b>ONGs</b> - Nonprofit organizations can ask about our reduced-rate and volunteer translation services.</td>
+</tr>
+</table>
+
+</body>
+</html>

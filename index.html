@@ -1,0 +1,234 @@
+﻿<!DOCType html>
+<html>
+<head>
+<!-- Diego Algara © 2005-2011 -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Marabotto - Read Entender Traduire</title>
+<meta name="description" content="Translation, Traduction, Übersetzung, Tradução, Traduzione, Traducció" />
+<meta name="keywords" content="Translation, Traduction, Übersetzung, Tradução, Traduzione, Traducció" />
+<script src="worldmap.js"></script>
+<style type="text/css">
+*{margin:0;padding:0}
+html{font:bold 15px arial,sans-serif;color:#6b6b6b;background:#FFFFFF}
+input,textarea{outline:none;border:1px solid #ccc;background:#FFF}
+a:focus{outline:none}
+a,a:visited,a:active{color:#6b6b6b;text-decoration:none}
+a:hover{text-decoration:underline}
+.center{text-align:center}
+</style>
+</head>
+<body>
+<div class="center">
+<img src="marabotto.png" />
+<br/>
+<a href="translation/" onmouseover="EnglishMap();" onmouseout="CleanMap();">Translation</a> |
+<a href="traduccion/" onmouseover="SpanishMap();" onmouseout="CleanMap();">Traducción</a> |
+<a href="traduction/" onmouseover="FrenchMap();" onmouseout="CleanMap();">Traduction</a> |
+<a href="ubersetzung/" onmouseover="GermanMap();" onmouseout="CleanMap();">Übersetzung</a> |
+<a href="traducao/" onmouseover="PortugueseMap();" onmouseout="CleanMap();">Tradução</a> |
+<a href="traduzione/" onmouseover="ItalianMap();" onmouseout="CleanMap();">Traduzione</a> |
+<a href="traduccio/" onmouseover="CatalanMap();" onmouseout="CleanMap();">Traducció</a>
+<br/>
+<canvas id="map" width="960px" height="520px">
+</canvas>
+</div>
+<script>
+
+function CatalanMap() {
+	WorldMap({
+		id: "map",
+		detail: {
+			"ad": "#333333", // Andorra
+			"es": "#333333", // España
+		}
+	});
+};
+
+function EnglishMap() {
+	WorldMap({
+		id: "map",
+		detail: {
+			"ag": "#333333", // Antigua and Barbuda
+			"au": "#333333", // Australia
+			"bs": "#333333", // Bahamas
+			"bd": "#333333", // Bangladesh
+			"bb": "#333333", // Barbados
+			"bz": "#333333", // Belize
+			"bw": "#333333", // Botswana
+			"cm": "#333333", // Cameroon
+			"ca": "#333333", // Canadá
+			"do": "#333333", // Dominicana
+			"gb": "#333333", // Inglaterra
+			"fj": "#333333", // Fiji
+			"gm": "#333333", // Gambia
+			"gh": "#333333", // Ghana
+			"gd": "#333333", // Grenada
+			"gg": "#333333", // Guernsey
+			"gy": "#333333", // Guyana
+			"hk": "#333333", // Hong Kong
+			"in": "#333333", // India
+			"ie": "#333333", // Ireland
+			"im": "#333333", // Isle of Man
+			"jm": "#333333", // Jamaica
+			"je": "#333333", // Jersey
+			"ke": "#333333", // Kenya
+			"ls": "#333333", // Lesotho
+			"lr": "#333333", // Liberia
+			"mw": "#333333", // Malawi
+			"my": "#333333", // Malaysia
+			"mt": "#333333", // Malta
+			"mh": "#333333", // Marshall Islands
+			"mu": "#333333", // Mauritius
+			"fm": "#333333", // Micronesia
+			"na": "#333333", // Namibia
+			"nz": "#333333", // New Zealand
+			"ng": "#333333", // Nigeria
+			"pk": "#333333", // Pakistan
+			"pg": "#333333", // Papua New Guinea
+			"ph": "#333333", // Philippines
+			"rw": "#333333", // Rwanda
+			"vc": "#333333", // Saint Vincent and the Grenadines
+			"sl": "#333333", // Sierra Leone
+			"sb": "#333333", // Solomon Islands
+			"za": "#333333", // South Africa
+			"lk": "#333333", // Sri Lanka
+			"sd": "#333333", // Sudan
+			"sz": "#333333", // Swaziland
+			"tz": "#333333", // Tanzania
+			"ug": "#333333", // Uganda
+			"vu": "#333333", // Vanuatu
+			"zm": "#333333", // Zambia
+			"zw": "#333333", // Zimbabwe
+			"us": "#333333", // Estados Unidos
+			"pr": "#333333", // Puerto Rico
+		}
+	});
+};
+
+function FrenchMap() {
+	WorldMap({
+		id: "map",
+		detail: {
+			"be": "#333333", // Belgium
+			"bj": "#333333", // Benin
+			"bf": "#333333", // Burkina Faso
+			"bi": "#333333", // Burundi
+			"cm": "#333333", // Cameroon
+			"ca": "#333333", // Canada
+			"cf": "#333333", // Central African Republic
+			"td": "#333333", // Chad
+			"ci": "#333333", // Côte d'Ivoire
+			"cd": "#333333", // Congo
+			"dj": "#333333", // Djibouti
+			"gq": "#333333", // Equatorial Guinea
+			"ga": "#333333", // Gabon
+			"gn": "#333333", // Guinea
+			"ht": "#333333", // Haiti
+			"lu": "#333333", // Luxembourg
+			"mg": "#333333", // Madagascar
+			"ml": "#333333", // Mali
+			"mc": "#333333", // Monaco
+			"ne": "#333333", // Niger
+			"cg": "#333333", // Congo
+			"sn": "#333333", // Senegal
+			"ch": "#333333", // Switzerland
+			"tg": "#333333", // Togo
+			"fr": "#333333", // Francia
+			"gg": "#333333", // Guernsey
+			"je": "#333333", // Jersey
+			"mu": "#333333", // Mauritius
+			"rw": "#333333", // Rwanda
+			"vu": "#333333", // Vanuatu
+		}
+	});
+};
+
+function PortugueseMap() {
+	WorldMap({
+		id: "map",
+		detail: {
+			"pt": "#333333", // Portugal
+			"ao": "#333333", // Angola
+			"tl": "#333333", // Timor-Leste
+			"gw": "#333333", // Guinea-Bissau
+			"mz": "#333333", // Mozambique
+			"st": "#333333", // São Tomé and Príncipe
+			"br": "#333333", // Brazil
+			"gq": "#333333", // Equatorial Guinea
+		}
+	});
+};
+
+function GermanMap() {
+	WorldMap({
+		id: "map",
+		detail: {
+			"de": "#333333", // Alemania
+			"at": "#333333", // Austria
+			"li": "#333333", // Liechtenstein
+			"na": "#333333", // Namibia
+			"lu": "#333333", // Luxembourg
+			"ch": "#333333", // Switzerland
+			"pl": "#333333", // Poland
+			"hu": "#333333", // Hungary
+		}
+	});
+};
+
+function ItalianMap() {
+	WorldMap({
+		id: "map",
+		detail: {
+			"it": "#333333", // Italia
+			"ch": "#333333", // Switzerland
+			"si": "#333333", // Slovenia
+		}
+	});
+};
+
+function SpanishMap() {
+	WorldMap({
+		id: "map",
+		detail: {
+			"ar": "#333333", // Argentina
+			"bo": "#333333", // Bolivia
+			"cl": "#333333", // Chile
+			"co": "#333333", // Colombia
+			"cr": "#333333", // Costa Rica
+			"cu": "#333333", // Cuba
+			"do": "#333333", // Dominicana
+			"ec": "#333333", // Ecuador
+			"es": "#333333", // España
+			"gq": "#333333", // Guinea Ecuatorial
+			"gt": "#333333", // Guatemala
+			"hn": "#333333", // Honduras
+			"mx": "#333333", // México
+			"ni": "#333333", // Nicaragua
+			"pa": "#333333", // Panamá
+			"py": "#333333", // Paraguay
+			"pe": "#333333", // Perú
+			"ph": "#333333", // Pilipinas
+			"pr": "#333333", // Puerto Rico
+			"sv": "#333333", // Salvador
+			"uy": "#333333", // Uruguay
+			"ve": "#333333", // Venezuela
+			"eh": "#333333", // Western Sahara
+			"gi": "#333333", // Gibraltar
+			"bz": "#333333", // Belize
+		}
+	});
+};
+
+function CleanMap() {
+
+WorldMap({id: "map"});
+
+};
+
+CleanMap();
+</script>
+<div style="text-align:center;font-size:11px">
+Por <a href="https://nubenautas.com/" title="Nubenautas" target="_blank">Nubenautas</a>
+</div>
+</body>
+</html>
